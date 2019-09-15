@@ -1,5 +1,13 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return 'Implement the practice require, and begin changing code in this row';
+    collectionA.forEach(collectA => {
+    objectB.value.forEach(objB => {
+        if(collectA.key == objB){
+          
+          collectA.count--;
+        }
+    });
+});
+return collectionA;
 }
