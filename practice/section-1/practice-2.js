@@ -1,5 +1,7 @@
 'use strict';
 
 function collectSameElements(collectionA, collectionB) {
-  return 'Implement the practice require, and begin changing code in this row';
+  const subCollectionB = collectionB[0];
+  const SameElements = collectionA.filter( n => subCollectionB.includes(n) );
+  return SameElements;
 }
