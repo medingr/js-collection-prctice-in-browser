@@ -1,5 +1,11 @@
 'use strict';
 
 function countSameElements(collection) {
-  return 'Implement the practice require, and begin changing code in this row';
+    const resultSet = new Array;
+    [...new Set(collection)]
+    .map(
+        letter => resultSet.push({ key: letter, count: collection.filter(y => y === letter).length })
+    );
+    return resultSet;
 }
+
